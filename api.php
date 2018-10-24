@@ -139,8 +139,13 @@
 	function get_default_currency() {
 		global $currency_get_call;
 		$url = create_json_url_filter($currency_get_call, "CurrencyIsDefault", "Equals", "true");
-		
-		$data = file_get_contents($url);
+		//$data = file_get_contents($url); blocked because of allow_url_fopen flag
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		$data = curl_exec($ch);
+		curl_close($ch);
+		return json_decode($data, true)['mvCurrencies'][0]['CurrencyCode'];
 		return json_decode($data, true)['mvCurrencies'][0]['CurrencyCode'];
 	}
 	
