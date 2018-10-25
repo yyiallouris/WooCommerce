@@ -146,7 +146,6 @@
 		$data = curl_exec($ch);
 		curl_close($ch);
 		return json_decode($data, true)['mvCurrencies'][0]['CurrencyCode'];
-		return json_decode($data, true)['mvCurrencies'][0]['CurrencyCode'];
 	}
 	
 	function check_connectivity() {
