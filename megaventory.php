@@ -136,7 +136,7 @@ function check_status() {
 	
 	$initialized = (bool)get_option("mv_initialized");
 	if (!$initialized) {
-		register_error('Megaventory is not initialzied!', 'The plugin will not work correctly before it is initialized');
+		register_error('Megaventory is not initialized!', 'The plugin will not work correctly before it is initialized');
 		return false;
 	}
 	
