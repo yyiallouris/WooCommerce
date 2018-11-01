@@ -130,7 +130,7 @@ function check_status() {
 	
 	$correct_currency = get_default_currency() == get_option("woocommerce_currency");
 	if (!$correct_currency) {
-		register_error('MEGAVENTORY ERROR! Currencies in woocommerce and megaventory do not match! Megaventory plugin will halt until this issue is resolved!', 'If you are sure that the currency is correct, please refresh until this warning disappears.');
+		register_error('MEGAVENTORY ERROR! Currencies in WooCommerce and Megaventory do not match! Megaventory plugin will halt until this issue is resolved!', 'If you are sure that the currency is correct, please refresh until this warning disappears.');
 		return false;
 	}
 	
