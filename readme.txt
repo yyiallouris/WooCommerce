@@ -1,5 +1,5 @@
 === Megaventory ===
-Contributors: grzalamp
+Contributors: grzalamp, ch-asimakopoulos
 Tags: megaventory, integration, inventory, stock
 Requires at least: 4.4
 Tested up to: 4.8
