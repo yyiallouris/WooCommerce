@@ -2,7 +2,7 @@
 
 // help correctly format the address
 function format_address($ar) {
-	$name = $ar['name'];
+	$name = $ar['name'];//kalispera sas
 	$company = $ar['company'];
 	$line_1 = $ar['line_1'];
 	$line_2 = $ar['line_2'];
