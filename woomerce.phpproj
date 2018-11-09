@@ -1,0 +1,36 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>woomerce</Name>
+    <ProjectGuid>{6d47833a-f60a-40e5-b01a-372b038b1f5b}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="style\style.css" />
+    <Compile Include="address.php" />
+    <Compile Include="api.php" />
+    <Compile Include="client.php" />
+    <Compile Include="coupon.php" />
+    <Compile Include="cron.php" />
+    <Compile Include="error.php" />
+    <Compile Include="megaventory.php" />
+    <Compile Include="mv.png" />
+    <Compile Include="order.php" />
+    <Compile Include="product.php" />
+    <Compile Include="readme.txt" />
+    <Compile Include="tax.php" />
+    <Compile Include="woocomerce.phpproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="style" />
+  </ItemGroup>
+</Project>
